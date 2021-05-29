@@ -1,17 +1,10 @@
-//Global Variables - can be accessed anywhere from the program 
+//Modules 
+//Encapsulated code - only limited things are shared
 
-//__dirname - path to current directory
-//__filename - file name 
-//require - function to use modules (CommonJS)
-//module - info about current module (file)
-//process - info about env where the program is being executed
+const names = require('./4-names_module')
+console.log(names);
+//(only functions/variables set as exportable are accessible through importing the module)
 
-console.log(__dirname);
-//console.log(__filename);
-//console.log(require);
-//console.log(module);
-//console.log(process);
-
-setInterval(() => {
-    console.log(`hello world`);
-},1000)
+//sayHi('mahima')
+//sayHi(sumi)
+//sayHi(nirmal)
