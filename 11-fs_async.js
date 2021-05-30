@@ -1,7 +1,7 @@
 const {readFile,writeFile} = require('fs')
 
 //Writing and reading files async
-
+console.log('start');
 readFile('./content/first_text.txt','utf8',(err,result)=> {
     if(err){
         console.log(err)
@@ -26,10 +26,10 @@ readFile('./content/first_text.txt','utf8',(err,result)=> {
                     return
                 }
                 else{
-                    console.log(result);
+                    console.log('done with this');
                 }
             }
         )
     })
 })
-
+console.log('starting next task');
