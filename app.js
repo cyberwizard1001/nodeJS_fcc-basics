@@ -8,3 +8,8 @@
 // npm install -g <packageName>
 // sudo npm install -g <packageName> (mac/linux)
 
+// package.json - manifest file (Stores important info about project/package)
+
+// ways to create - manual or automatic 
+// npm init creates it automatically 
+// npm init -y uses default options 

@@ -1,0 +1,19 @@
+{
+  "name": "tutorial-fcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-intro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cyberwizard1001/nodeJS_fcc-basics.git"
+  },
+  "author": "nirmalkarthikeyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cyberwizard1001/nodeJS_fcc-basics/issues"
+  },
+  "homepage": "https://github.com/cyberwizard1001/nodeJS_fcc-basics#readme"
+}
