@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/cyberwizard1001/nodeJS_fcc-basics/issues"
   },
-  "homepage": "https://github.com/cyberwizard1001/nodeJS_fcc-basics#readme"
+  "homepage": "https://github.com/cyberwizard1001/nodeJS_fcc-basics#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
