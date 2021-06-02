@@ -1,30 +1,21 @@
-const http = require('http')
+const EventEmitter = require('events')
 
-const server = http.createServer((req,res)=>{
+const customEmitter = new EventEmitter()
 
-if(req.url === '/'){
-    res.end('Homepage')
-}
+//on - listens for events 
+//emit - emits events 
 
-if(req.url === '/about'){
-    //BLOCKING CODE!!!!
-    for(let i = 0; i<1000; i++)
-    {
-        for(let j = 0; j<1000; j++){
-            console.log(`${1}, ${2}`);
-        }
-    }
-    res.end('About Page')
-
-    // Only when the loop completes, the rest of the 
-    // code is allowed to run. So other pages take time to load. Why? Loop is synch.
-    // So, we prefer async. 
-}
-
-res.end("Error")
-
+customEmitter.on('response',()=>{
+    console.log(`data received `)
 })
 
-server.listen(5000,()=>{
-    console.log('Server is listening on port 5000...');
+customEmitter.on('response',(name,id)=>{        //parameters are passed from event
+    console.log(`Name: ${name}, ID: ${id} `)
 })
+
+
+customEmitter.emit('response','nirmal',34)
+
+//One event can have multiple responses. 
+
+// Order matters. Before a response is emitted, listeners have to be setup.
